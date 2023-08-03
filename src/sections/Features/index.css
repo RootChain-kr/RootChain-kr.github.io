@@ -1,0 +1,25 @@
+.features-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -12px;
+}
+
+.features-card {
+  display: flex;
+  width: 33.333333%;
+}
+
+.features-card-contents {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: var(--foreground);
+  border-radius: var(--border-radius);
+  padding: 36px;
+  margin: 12px;
+}
+
+.features-card-contents h5 {
+  margin-top: 24px;
+  margin-bottom: 0px;
+}

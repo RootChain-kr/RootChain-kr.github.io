@@ -1,0 +1,63 @@
+.App-footer {
+  background-color: var(--foreground);
+  padding-top: 72px;
+  padding-bottom: 24px;
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.footer-sitemap {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  gap: 16px;
+  padding-right: 24px;
+  padding-bottom: 24px;
+}
+.footer-sitemap-nav .nav-item {
+  font-size: 18px;
+}
+.footer-sitemap-nav-sub .nav-item {
+  font-size: 18px;
+  font-weight: var(--font-weight-regular);
+  margin-top: 16px;
+}
+
+.footer-company * {
+  font-weight: var(--font-weight-medium);
+  color: var(--text-primary);
+}
+.footer-company td {
+  padding-bottom: 16px;
+}
+.footer-company td:first-child {
+  text-align: right;
+  padding-right: 16px;
+}
+.footer-company-logo {
+  text-align: left;
+  height: 36px;
+  padding-bottom: 20px;
+}
+.footer-company-row {
+  text-align: left !important;
+}
+.footer-company-social {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  gap: 36px;
+}
+
+.footer-company-social-btn img {
+  height: 100%;
+}
+
+.footer-copyright {
+  margin-top: 48px;
+  color: var(--text-primary);
+}

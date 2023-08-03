@@ -1,0 +1,34 @@
+.usecases-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -12px;
+}
+
+.usecases-card {
+  display: flex;
+  width: 33.33333%;
+}
+
+.usecases-card-contents {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: var(--background);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+  padding: 36px;
+  margin: 12px;
+}
+.usecase-desc {
+  margin-top: 24px;
+  white-space: break-spaces;
+  color: var(--text-primary);
+}
+
+.usecase-logo {
+  height: 50px;
+}
+
+.usecase-logo img {
+  height: 100%;
+}

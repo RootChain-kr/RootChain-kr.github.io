@@ -1,0 +1,43 @@
+.history-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.history-contents {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.history-content {
+  display: flex;
+  gap: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border-color);
+}
+.history-content:last-child {
+  border-bottom: none;
+}
+
+.history-year-contents {
+  margin-left: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.history-year-contents * {
+  line-height: 24px;
+  margin-bottom: 0;
+}
+
+.history-thumb {
+  width: 500px;
+}
+.history-thumb img {
+  margin-right: auto;
+  width: 100%;
+}

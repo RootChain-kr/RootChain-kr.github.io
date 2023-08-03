@@ -1,0 +1,32 @@
+.benefits-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.benefits-contents {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.benefits-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  padding: 16px;
+  gap: 16px;
+  border-bottom: 1px solid var(--border-color);
+}
+.benefits-content:last-child {
+  border-bottom: none;
+}
+
+.benefits-thumb {
+  width: 500px;
+}
+.benefits-thumb img {
+  margin-right: auto;
+  width: 100%;
+}

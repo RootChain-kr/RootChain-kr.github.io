@@ -1,0 +1,41 @@
+.team-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -12px;
+}
+
+.member-card {
+  display: flex;
+  width: 25%;
+}
+
+.member-card-contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: var(--foreground);
+  border-radius: var(--border-radius);
+  padding: 24px;
+  margin: 12px;
+}
+
+.member-image {
+  border-radius: 100px;
+  height: 100px;
+  margin-bottom: 24px;
+}
+.member-image.empty {
+  background-color: var(--border-color);
+  padding: 24px;
+}
+.member-image img {
+  height: 100%;
+}
+
+.member-social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: space-around;
+}
