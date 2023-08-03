@@ -2,9 +2,7 @@ import { product } from 'assets/data';
 
 const BrochureBtn = () => {
   return (
-    <a
-      target="_blank"
-      href="https://github.com/RootChain-kr/rootchain-kr.github.io/blob/gh-pages/RootChain_Brochure.pdf">
+    <a target="_blank" href={process.env.PUBLIC_URL + 'RootChain-brochure.pdf'}>
       <button className="btn btn-black">View Brochure</button>
     </a>
   );
