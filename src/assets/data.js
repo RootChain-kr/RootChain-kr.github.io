@@ -5,7 +5,6 @@ import ScatterdImg from 'assets/image/blue-sphere.png';
 import flatenImg from 'assets/image/blue-plat.png';
 
 import companyLogo from 'assets/image/logo_company-global.png';
-import brochurePath from 'https://github.com/RootChain-kr/rootchain-kr.github.io/blob/gh-pages/RootChain_Brochure.pdf';
 
 import mofaLogo from 'assets/logo/logo_mofa.png';
 import mofaLogoColor from 'assets/logo/logo_mofa-color.png';
@@ -36,7 +35,6 @@ export const defaultSettings = {
 };
 
 export const product = {
-  brochure: brochurePath,
   symbol,
   symbolContrast,
   copyright: '©2023 SGA Solutions Co., Ltd. All rights reserved.',
