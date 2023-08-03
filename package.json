@@ -2,7 +2,7 @@
   "name": "rootchain-kr.github.io",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/RootChain-kr/rootchain-kr.github.io.git",
+  "homepage": "https://rootchain-kr.github.io/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
