@@ -1,8 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.69563bb7.css",
-    "main.js": "/static/js/main.0ce8b8eb.js",
-    "static/media/RootChain_Brochure.pdf": "/static/media/RootChain_Brochure.20e725234a67819cef4b.pdf",
+    "main.js": "/static/js/main.67097fc3.js",
     "static/media/blue-sphere.png": "/static/media/blue-sphere.88d8fe90ce3cf0f7ad09.png",
     "static/media/blue-plat.png": "/static/media/blue-plat.72e1af47b5af2d61bcd7.png",
     "static/media/blue-cube.png": "/static/media/blue-cube.0d951758e6c932b1d79f.png",
@@ -22,10 +21,10 @@
     "static/media/video.svg": "/static/media/video.0543c33e6eb600f629c90d401e1782d1.svg",
     "static/media/home.svg": "/static/media/home.6a6b7c2ee5e34b698978b58e62bd203e.svg",
     "main.69563bb7.css.map": "/static/css/main.69563bb7.css.map",
-    "main.0ce8b8eb.js.map": "/static/js/main.0ce8b8eb.js.map"
+    "main.67097fc3.js.map": "/static/js/main.67097fc3.js.map"
   },
   "entrypoints": [
     "static/css/main.69563bb7.css",
-    "static/js/main.0ce8b8eb.js"
+    "static/js/main.67097fc3.js"
   ]
 }
