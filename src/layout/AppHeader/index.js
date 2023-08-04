@@ -1,20 +1,17 @@
 import './index.css';
-import { product } from 'assets/data';
-
-import Nav from './Nav';
-import HeaderMenus from './HeaderMenus';
+import ProductLogo from 'components/ProductLogo';
+import Navigator from 'components/Navigator';
+import LanguageSwitcher from 'components/LanguageSwitcher';
+import ContactBtn from 'components/ContactBtn';
 
 const AppHeader = () => {
   return (
-    <div className="App-header border-bottom">
+    <div className="App-header">
       <div className="container">
-        <div className="nav-bar">
-          <div className="logo">
-            <img src={product.symbol} />
-          </div>
-          <Nav />
-          <HeaderMenus />
-        </div>
+        <ProductLogo />
+        <Navigator />
+        <LanguageSwitcher />
+        <ContactBtn />
       </div>
     </div>
   );

@@ -1,45 +1,37 @@
-import "./index.css";
+import { useContext } from 'react';
+import { AppContext } from 'AppContext';
 
-import { useContext } from "react";
-import { AppContext } from "common/IntlProvider";
-import { history, thumbnails } from "assets/data";
+import './index.css';
+import { constants, histories } from 'texts/achivements';
+import SectionHeader from 'components/SectionHeader';
 
 const Achivements = () => {
-  const { getTranslated } = useContext(AppContext);
-
-  const HistoryCotents = (year) => {
-    const contents = getTranslated("history", year);
-    return (
-      <div className="history-year-contents">
-        {contents.map((conetent, index) => {
-          return <p key={index}>{conetent}</p>;
-        })}
-      </div>
-    );
-  };
+  const { language } = useContext(AppContext);
 
   return (
-    <div className="App-content-wrapper" id="achivements">
+    <div className="App-content-wrapper" id={constants.id}>
       <div className="container">
-        <div className="section-title">
-          <h5>Achivements</h5>
-          <h2>We Are Proven</h2>
-        </div>
+        <SectionHeader {...constants} />
 
         <div className="history-container">
           <div className="history-contents">
-            {history.map((year) => {
+            {histories.map((history) => {
               return (
-                <div key={year} className="history-content">
-                  <h3>{year}</h3>
-                  {HistoryCotents(year)}
+                <div key={history.id} className="history-content">
+                  <h3>{history.id}</h3>
+
+                  <div className="history-year-contents">
+                    {history.achivements.map((achivement, index) => {
+                      return <p key={index}>{achivement[language]}</p>;
+                    })}
+                  </div>
                 </div>
               );
             })}
           </div>
 
           <div className="history-thumb">
-            <img src={thumbnails.history} />
+            <img src={constants.thumb} />
           </div>
         </div>
       </div>

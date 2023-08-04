@@ -1,12 +1,12 @@
-import "./index.css";
+import './index.css';
 
-import Hero from "sections/Hero";
-import Features from "sections/Features";
-import Benefits from "sections/Benefits";
-import UseCases from "sections/UseCases";
-import Question from "sections/Question";
-import Achivements from "sections/Achivements";
-import Members from "sections/Members";
+import Hero from 'sections/Hero';
+import Features from 'sections/Features';
+import Benefits from 'sections/Benefits';
+import UseCases from 'sections/UseCases';
+import Question from 'sections/Question';
+import Achivements from 'sections/Achivements';
+import Team from 'sections/Team';
 
 const AppContent = () => {
   return (
@@ -17,7 +17,7 @@ const AppContent = () => {
       <UseCases />
       <Achivements />
       <Question />
-      <Members />
+      <Team />
     </div>
   );
 };

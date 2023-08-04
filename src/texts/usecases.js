@@ -1,3 +1,10 @@
+export const constants = {
+  id: 'usecases',
+  name: 'Use Cases',
+  title: 'Our Customers & Partners',
+  thumb: process.env.PUBLIC_URL + '/asset/blue-cube.png',
+};
+
 export const usecases = [
   {
     id: 'mofa',

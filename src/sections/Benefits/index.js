@@ -1,30 +1,29 @@
-import "./index.css";
+import { useContext } from 'react';
+import { AppContext } from 'AppContext';
 
-import { thumbnails, benefits } from "assets/data";
-import { useContext } from "react";
-import { AppContext } from "common/IntlProvider";
+import './index.css';
+import { constants, benefits } from 'texts/benefits';
+import SectionHeader from 'components/SectionHeader';
 
 const Benefits = () => {
-  const { getTranslated } = useContext(AppContext);
+  const { language } = useContext(AppContext);
 
   return (
-    <div className="App-content-wrapper" id="benefits">
+    <div className="App-content-wrapper" id={constants.id}>
       <div className="container">
-        <div className="section-title">
-          <h5>Benefits</h5>
-          <h2>Why Choose Us</h2>
-        </div>
+        <SectionHeader {...constants} />
 
         <div className="benefits-container">
           <div className="benefits-thumb">
-            <img src={thumbnails.benefits} />
+            <img src={constants.thumb} />
           </div>
+
           <div className="benefits-contents">
             {benefits.map((benefit, index) => {
               return (
                 <div key={benefit.id} className="benefits-content">
                   <h2>{index + 1}.</h2>
-                  <h5>{getTranslated("benefits", benefit.id)} </h5>
+                  <h5>{benefit[language]} </h5>
                 </div>
               );
             })}

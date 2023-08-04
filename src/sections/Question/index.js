@@ -1,7 +1,8 @@
-import "./index.css";
+import './index.css';
 
-import ContactBtn from "common/ContactBtn";
-import BrochureBtn from "common/BrochureBtn";
+import { product } from 'texts/common';
+import ContactBtn from 'components/ContactBtn';
+import BrochureBtn from 'components/BrochureBtn';
 
 const Question = () => {
   return (
@@ -10,7 +11,7 @@ const Question = () => {
         <div className="question-container">
           <div className="question-headline">
             Do you have any questions <br />
-            about Rootchain?
+            about {product.name}?
           </div>
           <div className="question-actions">
             <BrochureBtn />

@@ -1,10 +1,13 @@
-import "./index.css";
-import { thumbnails, usecases } from "assets/data";
-import BrochureBtn from "common/BrochureBtn";
+import './index.css';
+
+import { constants } from 'texts/hero';
+import { usecases } from 'texts/usecases';
+import { product } from 'texts/common';
+import BrochureBtn from 'components/BrochureBtn';
 
 const Hero = () => {
   return (
-    <div className="App-content-wrapper" id="main">
+    <div className="App-content-wrapper" id={constants.id}>
       <div className="container">
         <div className="hero-headline">
           <div className="hero-headline-banner">
@@ -15,12 +18,13 @@ const Hero = () => {
             <h1>
               Build Trust <br />
               Build Blockchain <br />
-              Build <span>Rootchain.</span>
+              Build <span>{product.name}</span>
             </h1>
             <BrochureBtn />
           </div>
+
           <div className="hero-headline-thumb">
-            <img src={thumbnails.hero} />
+            <img src={constants.thumb} />
             <div />
           </div>
         </div>
@@ -29,7 +33,7 @@ const Hero = () => {
           {usecases.map((usecase) => {
             return (
               <div key={usecase.id} className="logo">
-                <img src={usecase.blk} />
+                <img src={usecase.logo} />
               </div>
             );
           })}

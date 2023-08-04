@@ -1,19 +1,17 @@
-import './index.css';
-
 import { useContext } from 'react';
-import { AppContext } from 'common/IntlProvider';
-import { usecases } from 'texts';
+import { AppContext } from 'AppContext';
+
+import './index.css';
+import { constants, usecases } from 'texts/usecases';
+import SectionHeader from 'components/SectionHeader';
 
 const Usecases = () => {
-  // const { getTranslated } = useContext(AppContext);
+  const { language } = useContext(AppContext);
 
   return (
-    <div className="App-content-wrapper foreground" id="usecases">
+    <div className="App-content-wrapper" id={constants.id}>
       <div className="container">
-        <div className="section-title">
-          <h5>Use Cases</h5>
-          <h2>Our Customers & Partners</h2>
-        </div>
+        <SectionHeader {...constants} />
 
         <div className="usecases-card-container">
           {usecases.map((usecase) => {
@@ -23,7 +21,9 @@ const Usecases = () => {
                   <div className="usecase-logo">
                     <img src={process.env.PUBLIC_URL + usecase.logo} />
                   </div>
-                  <div className="usecase-desc">{usecase.en}</div>
+                  <div className="usecase-desc" lang={language}>
+                    {usecase[language]}
+                  </div>
                 </div>
               </div>
             );

@@ -1,4 +1,10 @@
-export default members = [
+export const constants = {
+  id: 'team',
+  name: 'Team',
+  title: 'Our Members',
+};
+
+export const members = [
   {
     id: 'gmb',
     image: '',
@@ -18,7 +24,7 @@ export default members = [
     image: '',
     name: 'KIM SH',
     position: 'Front-End Developer',
-    social: ['https://github.com/kimseoha1993', ,],
+    social: ['https://github.com/kimseoha1993'],
   },
   {
     id: 'rhj',

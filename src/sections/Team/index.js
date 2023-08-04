@@ -1,21 +1,8 @@
-import "./index.css";
-import { team } from "assets/data";
-import { icons } from "assets/data";
-
-const getSocialIcon = (url) => {
-  const socialCategories = [
-    { name: "github", icon: icons.githubIcon },
-    { name: "linkedin", icon: icons.linkedinIcon },
-    { name: "blog", icon: icons.blogIcon },
-  ];
-
-  let icon = icons.linkIcon;
-  socialCategories.map((category) => {
-    if (url.search(category.name) > -1) icon = category.icon;
-  });
-
-  return icon;
-};
+import './index.css';
+import { constants, members } from 'texts/team';
+import SectionHeader from 'components/SectionHeader';
+import { getIconByUrl } from 'common/utils';
+import { userIcon } from 'common/icons';
 
 const MemberSocial = ({ urls }) => {
   return (
@@ -24,7 +11,7 @@ const MemberSocial = ({ urls }) => {
         return (
           <a key={index} href={url}>
             <div className="icon-btn">
-              <img src={getSocialIcon(url)} />
+              <img src={getIconByUrl(url)} />
             </div>
           </a>
         );
@@ -33,7 +20,7 @@ const MemberSocial = ({ urls }) => {
   );
 };
 
-const Members = () => {
+const Team = () => {
   const TeamCard = ({ member }) => {
     return (
       <div className="member-card">
@@ -44,7 +31,7 @@ const Members = () => {
             </div>
           ) : (
             <div className="member-image empty">
-              <img src={icons.userIcon} />
+              <img src={userIcon} />
             </div>
           )}
 
@@ -61,13 +48,10 @@ const Members = () => {
   return (
     <div className="App-content-wrapper" id="team">
       <div className="container">
-        <div className="section-title">
-          <h5>Team</h5>
-          <h2>Our Members</h2>
-        </div>
+        <SectionHeader {...constants} />
 
         <div className="team-card-container">
-          {team.map((member) => {
+          {members.map((member) => {
             return <TeamCard key={member.id} member={member} />;
           })}
         </div>
@@ -76,4 +60,4 @@ const Members = () => {
   );
 };
 
-export default Members;
+export default Team;

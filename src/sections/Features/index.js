@@ -1,13 +1,14 @@
-import "./index.css";
-import { features } from "assets/data";
-import { useContext } from "react";
-import { AppContext } from "common/IntlProvider";
+import { useContext } from 'react';
+import { AppContext } from 'AppContext';
+
+import './index.css';
+import { constants, features } from 'texts/features';
 
 const Features = () => {
-  const { getTranslated } = useContext(AppContext);
+  const { language } = useContext(AppContext);
 
   return (
-    <div className="App-content-wrapper" id="features">
+    <div className="App-content-wrapper" id={constants.id}>
       <div className="container">
         <div className="features-card-container">
           {features.map((feature) => {
@@ -18,7 +19,7 @@ const Features = () => {
                     <img src={feature.icon} />
                   </div>
 
-                  <h5>{getTranslated("features", feature.id)}</h5>
+                  <h5>{feature[language]}</h5>
                 </div>
               </div>
             );

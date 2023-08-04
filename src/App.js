@@ -1,7 +1,7 @@
-import AppHeader from "layout/AppHeader";
-import AppContent from "layout/AppContent";
-import AppFooter from "layout/AppFooter";
-import TopButton from "common/TopBtn";
+import AppHeader from 'layout/AppHeader';
+import AppContent from 'layout/AppContent';
+import AppFooter from 'layout/AppFooter';
+import TopBtn from 'components/TopBtn';
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       <AppHeader />
       <AppContent />
       <AppFooter />
-      <TopButton />
+      <TopBtn />
     </div>
   );
 }
