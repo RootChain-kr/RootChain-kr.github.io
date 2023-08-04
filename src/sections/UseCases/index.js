@@ -1,11 +1,11 @@
-import "./index.css";
+import './index.css';
 
-import { useContext } from "react";
-import { AppContext } from "common/IntlProvider";
-import { usecases } from "assets/data";
+import { useContext } from 'react';
+import { AppContext } from 'common/IntlProvider';
+import { usecases } from 'texts';
 
 const Usecases = () => {
-  const { getTranslated } = useContext(AppContext);
+  // const { getTranslated } = useContext(AppContext);
 
   return (
     <div className="App-content-wrapper foreground" id="usecases">
@@ -21,11 +21,9 @@ const Usecases = () => {
               <div key={usecase.id} className="usecases-card">
                 <div className="usecases-card-contents">
                   <div className="usecase-logo">
-                    <img src={usecase.logo} />
+                    <img src={process.env.PUBLIC_URL + usecase.logo} />
                   </div>
-                  <div className="usecase-desc">
-                    {getTranslated("usecases", usecase.id)}
-                  </div>
+                  <div className="usecase-desc">{usecase.en}</div>
                 </div>
               </div>
             );

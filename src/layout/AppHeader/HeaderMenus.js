@@ -1,6 +1,6 @@
-import { useContext } from "react";
-import { AppContext } from "common/IntlProvider";
-import ContactBtn from "common/ContactBtn";
+import { useContext } from 'react';
+import { AppContext } from 'common/IntlProvider';
+import ContactBtn from 'common/ContactBtn';
 
 // import { languages } from "assets/data";
 
@@ -17,7 +17,7 @@ const LanguageSwitcher = () => {
 const HeaderMenus = () => {
   return (
     <div className="header-menus">
-      {/* <LanguageSwitcher /> */}
+      <LanguageSwitcher />
       <ContactBtn />
     </div>
   );

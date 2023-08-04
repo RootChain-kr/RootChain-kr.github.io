@@ -1,8 +1,8 @@
-import { product } from 'assets/data';
-
 const BrochureBtn = () => {
   return (
-    <a target="_blank" href={process.env.PUBLIC_URL + 'RootChain-brochure.pdf'}>
+    <a
+      target="_blank"
+      href={process.env.PUBLIC_URL + '/asset/RootChain-brochure.pdf'}>
       <button className="btn btn-black">View Brochure</button>
     </a>
   );
