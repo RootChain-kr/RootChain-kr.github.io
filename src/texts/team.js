@@ -24,7 +24,10 @@ export const members = [
     image: '',
     name: 'KIM SH',
     position: 'Front-End Developer',
-    social: ['https://github.com/kimseoha1993'],
+    social: [
+      'https://github.com/kimseoha1993',
+      'https://www.behance.net/kimseoha1993',
+    ],
   },
   {
     id: 'rhj',
