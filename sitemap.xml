@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+    <url>
+        <loc>https://rootchain-kr.github.io</loc>
+    </url>
+    <url>
+        <loc>https://rootchain-kr.github.io/#home</loc>
+    </url>
+    <url>
+        <loc>https://rootchain-kr.github.io/#features</loc>
+    </url>
+    <url>
+        <loc>https://rootchain-kr.github.io/#benefits</loc>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://rootchain-kr.github.io/#usecases</loc>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://rootchain-kr.github.io/#achivements</loc>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://rootchain-kr.github.io/#team</loc>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://rootchain-kr.github.io/#contactus</loc>
+    </url>
+
+
+</urlset>
