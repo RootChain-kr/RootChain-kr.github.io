@@ -10,7 +10,7 @@ import Team from 'sections/Team';
 
 const AppContent = () => {
   return (
-    <div className="App-content ">
+    <main className="App-content ">
       <Hero />
       <Features />
       <Benefits />
@@ -18,7 +18,7 @@ const AppContent = () => {
       <Achivements />
       <Question />
       <Team />
-    </div>
+    </main>
   );
 };
 

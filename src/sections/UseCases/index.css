@@ -1,34 +1,46 @@
-.usecases-card-container {
-  display: flex;
-  flex-wrap: wrap;
-  margin: -12px;
-}
-
-.usecases-card {
-  display: flex;
-  width: 33.33333%;
-}
-
-.usecases-card-contents {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  background-color: var(--background);
-  border-radius: var(--border-radius);
+.usecases .card-contents {
   border: 1px solid var(--border-color);
-  padding: 36px;
-  margin: 12px;
-}
-.usecase-desc {
-  margin-top: 24px;
-  white-space: break-spaces;
-  color: var(--text-primary);
+  flex-direction: column;
 }
 
-.usecase-logo {
+.usecases-logo {
   height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.usecases-logo img {
+  height: 100%;
 }
 
-.usecase-logo img {
-  height: 100%;
+.usecases-action button {
+  padding: 0;
+}
+
+@media (min-width: 0px) {
+  .usecases-logo .learn-btn {
+    display: flex;
+    margin-left: auto;
+  }
+  .usecases-desc {
+    margin-top: 24px;
+  }
+  .usecases-action .learn-btn {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .usecases .card-contents {
+    justify-content: space-between;
+  }
+  .usecases-desc {
+    margin-bottom: 24px;
+  }
+  .usecases-logo .learn-btn {
+    display: none;
+  }
+  .usecases-action .learn-btn {
+    display: block;
+  }
 }

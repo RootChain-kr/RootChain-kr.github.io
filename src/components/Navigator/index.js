@@ -6,9 +6,9 @@ const CompactNav = () => {
   return (
     <div className="nav-compact">
       <div className="dropdown">
-        <a className="nav-item icon">
+        <button className="icon-btn">
           <img src={barsIcon} />
-        </a>
+        </button>
 
         <div className="dropdown-content">
           {sections.map((section) => {
@@ -40,12 +40,14 @@ const Nav = () => {
     <div className="nav">
       {sections.map((section) => {
         return !section.sub ? (
-          <a key={section.id} className="nav-item" href={`#${section.id}`}>
-            {section.name}
+          <a key={section.id} href={`#${section.id}`}>
+            <button className="btn btn-black">{section.name}</button>
           </a>
         ) : (
           <div key={section.id} className="dropdown">
-            <a className="nav-item">{section.name}</a>
+            <a href={`#${section.id}`}>
+              <button className="btn btn-black">{section.name}</button>
+            </a>
 
             <div className="dropdown-content">
               {section.sub.map((sub) => {

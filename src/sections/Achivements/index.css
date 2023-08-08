@@ -1,43 +1,48 @@
-.history-container {
+.achivements-content {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  gap: 24px;
+  border-bottom: 1px solid var(--border-color);
+}
+.achivements-content * {
+  margin-bottom: 0;
+  line-height: 24px;
 }
 
-.history-contents {
-  width: 50%;
+.achivements-content:last-child {
+  border-bottom: none;
+}
+
+.achivements-year-contents {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
-.history-content {
+.achivements-year-content {
   display: flex;
   gap: 16px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  border-bottom: 1px solid var(--border-color);
 }
-.history-content:last-child {
-  border-bottom: none;
+.achivements-year-content-category {
+  text-transform: uppercase;
+  font-weight: bold;
+  white-space: nowrap;
 }
 
-.history-year-contents {
-  margin-left: 24px;
+.proofs-contents {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
-
-.history-year-contents * {
-  line-height: 24px;
-  margin-bottom: 0;
+.proofs-content {
+  background-color: var(--foreground);
+  border-radius: var(--border-radius);
+  padding: 36px 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
-
-.history-thumb {
-  width: 500px;
-}
-.history-thumb img {
-  margin-right: auto;
-  width: 100%;
+.proofs-content * {
+  margin: 0;
 }

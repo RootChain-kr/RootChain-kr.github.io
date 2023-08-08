@@ -4,7 +4,7 @@
   align-items: center;
   background-color: var(--primary);
   border-radius: var(--border-radius);
-  gap: 24px;
+  gap: 32px;
   padding: 48px;
 }
 .question-headline {
@@ -20,4 +20,13 @@
 .question-actions {
   display: flex;
   gap: 24px;
+}
+
+@media (min-width: 1200px) {
+  .inner-container-contents {
+    width: 50%;
+  }
+  .thumb-container {
+    width: 50%;
+  }
 }

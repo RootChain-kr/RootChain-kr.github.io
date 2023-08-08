@@ -6,14 +6,14 @@ import ContactBtn from 'components/ContactBtn';
 
 const AppHeader = () => {
   return (
-    <div className="App-header">
+    <header className="App-header">
       <div className="container">
         <ProductLogo />
         <Navigator />
         <LanguageSwitcher />
         <ContactBtn />
       </div>
-    </div>
+    </header>
   );
 };
 

@@ -12,6 +12,12 @@ import {
   videoIcon,
 } from 'common/icons';
 
+export const lable = {
+  brochure: 'View brochure',
+  contact: 'Contact us',
+  learn: 'Learn more',
+};
+
 export const sections = [
   hero,
   features,
@@ -38,7 +44,7 @@ export const company = {
     ko: '최영철',
   },
   addr: {
-    en: '05836, 6th floor, AJ building, 9 Jeongui-ro 8-gil,{br}Songpa-gu, Seoul, Republic of Korea',
+    en: '05836, 6th floor, AJ building, 9 Jeongui-ro 8-gil, Songpa-gu, Seoul, Republic of Korea',
     ko: '05836, 서울특별시 송파구 정의로8길 9, AJ빌딩 6층',
   },
   social: [
@@ -71,7 +77,7 @@ export const company = {
 };
 
 export const product = {
-  symbol: process.env.PUBLIC_URL + '/symbol.svg',
+  symbol: process.env.PUBLIC_URL + '/symbol.png',
   name: 'RootChain',
   copyright: '©2023 SGA Solutions Co., Ltd. All rights reserved.',
 };

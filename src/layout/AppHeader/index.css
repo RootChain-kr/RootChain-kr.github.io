@@ -1,5 +1,8 @@
 .App-header {
   width: 100%;
+  position: fixed;
+  background-color: var(--black);
+  z-index: 999;
 }
 .App-header .container {
   width: 100%;
@@ -10,51 +13,25 @@
 }
 
 @media (min-width: 0px) {
-  .App-header {
-    position: fixed;
-    background-color: var(--foreground);
-    border-bottom: 1px solid var(--border-color);
+  .nav {
+    display: none;
   }
   .nav-compact {
     display: flex;
   }
-  .nav {
-    display: none;
-  }
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
 }
 
 @media (min-width: 992px) {
-  .App-header {
-    position: relative;
-    background-color: var(--background);
-    border-bottom: none;
-  }
-  .App-header .language-switcher {
-    display: none;
-  }
-  .App-header .contact-btn {
-    display: none;
-  }
-  .nav-compact {
-    display: none;
-  }
   .nav {
     display: flex;
   }
-}
-
-@media (min-width: 1200px) {
-  .App-header {
-    position: fixed;
-    border-bottom: 1px solid var(--border-color);
-  }
-  .App-header .language-switcher {
-    display: block;
-  }
-  .App-header .App-header .contact-btn {
-    display: block;
-  }
-  .nav {
-    margin-right: auto;
+  .nav-compact {
+    display: none;
   }
 }

@@ -5,7 +5,7 @@ import Copyright from './Copyright';
 
 const AppFooter = () => {
   return (
-    <div className="App-footer" id="contactus">
+    <footer className="App-footer" id="contactus">
       <div className="container">
         <div className="footer-wrapper">
           <Contact />
@@ -16,7 +16,7 @@ const AppFooter = () => {
       <div className="container">
         <Copyright />
       </div>
-    </div>
+    </footer>
   );
 };
 

@@ -23,8 +23,8 @@ const MemberSocial = ({ urls }) => {
 const Team = () => {
   const TeamCard = ({ member }) => {
     return (
-      <div className="member-card">
-        <div className="member-card-contents">
+      <div className="card md-3">
+        <div className="card-contents">
           {member.image ? (
             <div className="member-image">
               <img src={member.img} />
@@ -35,8 +35,11 @@ const Team = () => {
             </div>
           )}
 
-          <h5>{member.name}</h5>
-          <p>{member.position}</p>
+          <div className="member-desc">
+            <h5>{member.name}</h5>
+            <p>{member.position}</p>
+          </div>
+
           <div className="member-social">
             {member.social.length > 0 && <MemberSocial urls={member.social} />}
           </div>
@@ -46,15 +49,13 @@ const Team = () => {
   };
 
   return (
-    <div className="App-content-wrapper" id="team">
-      <div className="container">
-        <SectionHeader {...constants} />
+    <div className="container team" id="team">
+      <SectionHeader {...constants} />
 
-        <div className="team-card-container">
-          {members.map((member) => {
-            return <TeamCard key={member.id} member={member} />;
-          })}
-        </div>
+      <div className="card-container">
+        {members.map((member) => {
+          return <TeamCard key={member.id} member={member} />;
+        })}
       </div>
     </div>
   );

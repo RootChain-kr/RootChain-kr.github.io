@@ -5,17 +5,17 @@ const Sitemap = () => {
     <div className="footer-sitemap">
       {sections.map((section) => {
         return (
-          <div key={section.id} className="footer-sitemap-nav">
-            <a className="nav-item" href={`#${section.id}`}>
-              {section.name}
+          <div key={section.id}>
+            <a href={`#${section.id}`}>
+              <button>{section.name}</button>
             </a>
 
             {section.sub && (
-              <div className="footer-sitemap-nav-sub">
+              <div className="footer-sitemap-sub">
                 {section.sub.map((sub) => {
                   return (
-                    <a key={sub.id} className="nav-item" href={`#${sub.id}`}>
-                      {sub.name}
+                    <a key={sub.id} href={`#${sub.id}`}>
+                      <button>{sub.name}</button>
                     </a>
                   );
                 })}

@@ -1,3 +1,5 @@
+import './index.css';
+
 const SectionHeader = ({ name, title }) => {
   return (
     <div className="section-title">

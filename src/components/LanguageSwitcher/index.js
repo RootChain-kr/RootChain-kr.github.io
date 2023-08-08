@@ -6,17 +6,17 @@ const LanguageSwitcher = () => {
   const { languages, language, setLanguage } = useContext(AppContext);
 
   return (
-    <div className="language-switcher select">
-      <a className="select-value">
+    <div className="dropdown language-switcher">
+      <button className="btn btn-black">
         <div>{language}</div>
-      </a>
+      </button>
 
-      <div className="select-content">
+      <div className="dropdown-content">
         {languages.map((lang) => {
           return (
-            <button key={lang} onClick={() => setLanguage(lang)}>
-              {lang}
-            </button>
+            <a key={lang}>
+              <button onClick={() => setLanguage(lang)}>{lang}</button>
+            </a>
           );
         })}
       </div>

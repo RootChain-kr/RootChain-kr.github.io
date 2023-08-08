@@ -2,13 +2,11 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  padding-top: 72px;
-  padding-bottom: 72px;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .hero-headline-banner {
-  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -28,17 +26,10 @@
   border-radius: var(--border-radius);
 }
 
-.hero-headline-thumb {
-  width: 500px;
-}
-.hero-headline-thumb img {
-  margin-left: auto;
-  width: 100%;
-}
-
 .hero-usecase {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  opacity: 0.6;
 }
