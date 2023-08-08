@@ -49,7 +49,11 @@ const Team = () => {
   };
 
   return (
-    <div className="container team" id="team">
+    <div
+      className="container team"
+      id="team"
+      data-aos="fade-right"
+      data-aos-duration="3000">
       <SectionHeader {...constants} />
 
       <div className="card-container">

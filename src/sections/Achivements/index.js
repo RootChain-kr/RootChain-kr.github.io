@@ -9,7 +9,11 @@ const Achivements = () => {
   const { language } = useContext(AppContext);
 
   return (
-    <div className="container achivements" id={constants.id}>
+    <div
+      className="container achivements"
+      id={constants.id}
+      data-aos="fade-right"
+      data-aos-duration="3000">
       <SectionHeader {...constants} />
 
       <div className="inner-container">

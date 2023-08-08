@@ -12,7 +12,10 @@ const Hero = () => {
   return (
     <div className="container" id={constants.id}>
       <div className="hero-headline">
-        <div className="hero-headline-banner">
+        <div
+          className="hero-headline-banner"
+          data-aos="fade-right"
+          data-aos-duration="3000">
           <div className="hero-headline-tag">
             {tags.map((tag, index) => {
               return (
@@ -30,12 +33,15 @@ const Hero = () => {
           <BrochureBtn />
         </div>
 
-        <div className="thumb-container">
+        <div
+          className="thumb-container"
+          data-aos="fade-left"
+          data-aos-duration="3000">
           <img src={constants.thumb} />
         </div>
       </div>
 
-      <div className="hero-usecase">
+      <div className="hero-usecase" data-aos="zoom-in" data-aos-duration="3000">
         {usecases.map((usecase) => {
           return (
             <div key={usecase.id} className="logo">

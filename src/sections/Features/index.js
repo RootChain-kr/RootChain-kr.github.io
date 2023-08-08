@@ -12,7 +12,11 @@ const Features = () => {
       <div className="card-container">
         {features.map((feature) => {
           return (
-            <div key={feature.id} className="card md-4">
+            <div
+              key={feature.id}
+              className="card md-4"
+              data-aos="zoom-in"
+              data-aos-duration="3000">
               <div className="card-contents">
                 <div className="features-icon icon">
                   <img src={feature.icon} />

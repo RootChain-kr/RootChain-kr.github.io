@@ -10,7 +10,11 @@ const Usecases = () => {
   const { language } = useContext(AppContext);
 
   return (
-    <div className="container usecases" id={constants.id}>
+    <div
+      className="container usecases"
+      id={constants.id}
+      data-aos="fade-right"
+      data-aos-duration="3000">
       <SectionHeader {...constants} />
 
       <div className="card-container">
