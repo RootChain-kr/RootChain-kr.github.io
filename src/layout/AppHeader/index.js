@@ -1,7 +1,7 @@
 import './index.css';
-import ProductLogo from 'components/ProductLogo';
-import Navigator from 'components/Navigator';
-import LanguageSwitcher from 'components/LanguageSwitcher';
+import ProductLogo from 'layout/AppHeader/ProductLogo';
+import Navigator from 'layout/AppHeader/Navigator';
+import LanguageSwitcher from 'layout/AppHeader/LanguageSwitcher';
 import ContactBtn from 'components/ContactBtn';
 
 const AppHeader = () => {

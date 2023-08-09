@@ -6,6 +6,7 @@ import { constants, tags } from 'texts/hero';
 import { usecases } from 'texts/usecases';
 import { product } from 'texts/common';
 import BrochureBtn from 'components/BrochureBtn';
+import LazyImg from 'components/LazyImg';
 
 const Hero = () => {
   const { language } = useContext(AppContext);
@@ -37,7 +38,8 @@ const Hero = () => {
           className="thumb-container"
           data-aos="fade-left"
           data-aos-duration="3000">
-          <img src={constants.thumb} />
+          <LazyImg src={constants.thumb} />
+          {/* <img src={constants.thumb} /> */}
         </div>
       </div>
 
@@ -45,7 +47,8 @@ const Hero = () => {
         {usecases.map((usecase) => {
           return (
             <div key={usecase.id} className="logo">
-              <img src={usecase.logo} />
+              <LazyImg src={usecase.logo} />
+              {/* <img src={usecase.logo} /> */}
             </div>
           );
         })}
