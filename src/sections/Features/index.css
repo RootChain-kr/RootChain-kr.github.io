@@ -1,6 +1,6 @@
 .features .card-contents {
   background-color: var(--foreground);
-  gap: 24px;
+  gap: 16px;
 }
 
 @media (min-width: 0px) {

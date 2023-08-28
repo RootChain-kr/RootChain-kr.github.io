@@ -5,13 +5,12 @@ import { constants as usecases } from 'texts/usecases';
 import { constants as achivement } from 'texts/achivements';
 import { constants as team } from 'texts/team';
 import {
-  blogIcon,
-  facebookIcon,
-  homeIcon,
-  linkedinIcon,
-  videoIcon,
-} from 'common/icons';
-
+  mdiHome,
+  mdiAlphaBBox,
+  mdiYoutube,
+  mdiFacebook,
+  mdiLinkedin,
+} from '@mdi/js';
 export const lable = {
   brochure: 'View brochure',
   contact: 'Contact us',
@@ -50,27 +49,27 @@ export const company = {
   social: [
     {
       id: 'web',
-      icon: homeIcon,
+      icon: mdiHome,
       url: 'https://www.sgasol.kr/main',
     },
     {
       id: 'blog',
-      icon: blogIcon,
+      icon: mdiAlphaBBox,
       url: 'https://blog.naver.com/sga_corp',
     },
     {
       id: 'youtube',
-      icon: videoIcon,
+      icon: mdiYoutube,
       url: 'https://www.youtube.com/channel/UC-7oBeCozlCh5Hzko866brg',
     },
     {
       id: 'facebook',
-      icon: facebookIcon,
+      icon: mdiFacebook,
       url: 'https://www.facebook.com/SGAOfficial',
     },
     {
       id: 'linkein',
-      icon: linkedinIcon,
+      icon: mdiLinkedin,
       url: 'https://kr.linkedin.com/company/sgasol',
     },
   ],

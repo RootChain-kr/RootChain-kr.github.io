@@ -2,7 +2,9 @@ export const constants = {
   id: 'achivements',
   name: 'Achivements',
   title: 'We Are Proven',
-  thumb: process.env.PUBLIC_URL + '/asset/blue-plat.png',
+  // thumb: process.env.PUBLIC_URL + '/asset/blue-plat.png',
+  thumb:
+    'https://github.com/RootChain-kr/rootchain-kr.github.io/blob/gh-pages/asset/blue-plat.png?raw=true',
 };
 
 export const proofs = [

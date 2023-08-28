@@ -1,13 +1,13 @@
-import { githubIcon, linkedinIcon, blogIcon, linkIcon } from 'common/icons';
+import { mdiGithub, mdiLinkedin, mdiAlphaBBox, mdiLinkVariant } from '@mdi/js';
 
 export const getIconByUrl = (url) => {
   const socialCategories = [
-    { name: 'github', icon: githubIcon },
-    { name: 'linkedin', icon: linkedinIcon },
-    { name: 'blog', icon: blogIcon },
+    { name: 'github', icon: mdiGithub },
+    { name: 'linkedin', icon: mdiLinkedin },
+    { name: 'blog', icon: mdiAlphaBBox },
   ];
 
-  let icon = linkIcon;
+  let icon = mdiLinkVariant;
   socialCategories.map((category) => {
     if (url.search(category.name) > -1) icon = category.icon;
   });

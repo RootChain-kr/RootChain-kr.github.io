@@ -9,19 +9,23 @@ export const members = [
     id: 'gmb',
     image: '',
     name: 'GONG MB',
-    position: '',
+    position: 'Developer',
     social: [],
   },
   {
     id: 'kgw',
-    image: '',
+    image: 'https://avatars.githubusercontent.com/u/39755330?v=4',
     name: 'KIM GW',
-    position: '',
-    social: [],
+    position: 'Software Engineer',
+    social: [
+      'https://www.linkedin.com/in/kgeonw/',
+      'https://github.com/kgeonw',
+    ],
   },
   {
     id: 'ksh',
-    image: '',
+    image:
+      'https://avatars.githubusercontent.com/u/78329874?s=400&u=90ac26843520cb2224bb92d4bbd7e911a521fea8&v=4',
     name: 'KIM SH',
     position: 'Front-End Developer',
     social: [
@@ -33,21 +37,21 @@ export const members = [
     id: 'rhj',
     image: '',
     name: 'RYU HJ',
-    position: '',
+    position: 'Developer',
     social: [],
   },
   {
     id: 'lhj',
     image: '',
     name: 'LEE HJ',
-    position: '',
+    position: 'Developer',
     social: [],
   },
   {
     id: 'hsg',
     image: '',
     name: 'HONG SG',
-    position: '',
+    position: 'Developer',
     social: [],
   },
 ];

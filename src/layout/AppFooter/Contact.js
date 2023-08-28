@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import { AppContext } from 'AppContext';
 import { company } from 'texts/common';
+import Icon from 'components/Icon';
 
 const Contact = () => {
   const { language } = useContext(AppContext);
@@ -49,7 +50,7 @@ const Contact = () => {
                   return (
                     <div key={item.id} className="icon-btn">
                       <a href={item.url}>
-                        <img src={item.icon} />
+                        <Icon icon={item.icon} color="#000" width={24} />
                       </a>
                     </div>
                   );

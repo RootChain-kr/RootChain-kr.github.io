@@ -2,7 +2,9 @@ import './index.css';
 import { constants, members } from 'texts/team';
 import SectionHeader from 'components/SectionHeader';
 import { getIconByUrl } from 'common/utils';
-import { userIcon } from 'common/icons';
+
+import Icon from 'components/Icon';
+import { mdiAccountCircle } from '@mdi/js';
 
 const MemberSocial = ({ urls }) => {
   return (
@@ -11,7 +13,7 @@ const MemberSocial = ({ urls }) => {
         return (
           <a key={index} href={url}>
             <div className="icon-btn">
-              <img src={getIconByUrl(url)} />
+              <Icon icon={getIconByUrl(url)} color="#000" />
             </div>
           </a>
         );
@@ -25,15 +27,13 @@ const Team = () => {
     return (
       <div className="card md-3">
         <div className="card-contents">
-          {member.image ? (
-            <div className="member-image">
-              <img src={member.img} />
-            </div>
-          ) : (
-            <div className="member-image empty">
-              <img src={userIcon} />
-            </div>
-          )}
+          <div className="member-image">
+            {member.image ? (
+              <img src={member.image} />
+            ) : (
+              <Icon icon={mdiAccountCircle} width={150} />
+            )}
+          </div>
 
           <div className="member-desc">
             <h5>{member.name}</h5>

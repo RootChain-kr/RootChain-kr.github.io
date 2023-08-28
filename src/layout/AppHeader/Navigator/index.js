@@ -1,13 +1,14 @@
 import './index.css';
 import { sections } from 'texts/common';
-import { barsIcon } from 'common/icons';
+import Icon from 'components/Icon';
+import { mdiMenu } from '@mdi/js';
 
 const CompactNav = () => {
   return (
     <div className="nav-compact">
       <div className="dropdown">
         <button className="icon-btn">
-          <img src={barsIcon} />
+          <Icon icon={mdiMenu} />
         </button>
 
         <div className="dropdown-content">

@@ -2,7 +2,9 @@ export const constants = {
   id: 'benefits',
   name: 'Benefits',
   title: 'Why Choose Us',
-  thumb: process.env.PUBLIC_URL + '/asset/blue-sphere.png',
+  // thumb: process.env.PUBLIC_URL + '/asset/blue-sphere.png',
+  thumb:
+    'https://github.com/RootChain-kr/rootchain-kr.github.io/blob/gh-pages/asset/blue-sphere.png?raw=true',
 };
 
 export const benefits = [
